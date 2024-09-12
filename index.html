@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini AI </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h1>Gemini</h1>
+        </div>
+        <div class="sidebar-content">
+            <button class="new-chat">+ New chat</button>
+            <div class="recent-chats">
+                <p>Recent</p>
+                <ul>
+                    <li>Learning Ethical Hacking</li>
+                    <li>Best YouTube Channel for...</li>
+                    <li>DSA Topics and Algorithms</li>
+                    <li>Learning JavaScript for...</li>
+                
+                </ul>
+                <p>Show more</p>
+            </div>
+        </div>
+        <div class="sidebar-footer">
+            <p onclick="showPage('help')">Help</p>
+            <p onclick="showPage('activity')">Activity</p>
+            <p onclick="showPage('settings')">Settings</p>
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="chat-container" id="chat-container">
+            <div class="chat-header">
+                <h1>Hello, Maroof</h1>
+                <h2>How can I help you today?</h2>
+            </div>
+            <div class="chat-body" id="chat-body">
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="user-input" placeholder="Enter a prompt here">
+                <button onclick="sendMessage()">
+                    <img src="arrow-right_13883777.png" alt="Send">
+                </button>
+                <button onclick="searchWeb()">Search Web</button>
+            </div>
+        </div>
+        <div class="help-container hidden" id="help-container">
+            <h2>Help</h2>
+            <p>Here you can find information to help you use this chatbot.</p>
+        </div>
+        <div class="activity-container hidden" id="activity-container">
+            <h2>Activity</h2>
+            <p>Here you can view your recent activities.</p>
+        </div>
+        <div class="settings-container hidden" id="settings-container">
+            <h2>Settings</h2>
+            <p>Here you can adjust your preferences.</p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
